@@ -1,0 +1,31 @@
+package firs;
+
+import java.util.Scanner;
+
+public class main
+{
+    public static void main(String[] args)
+    {
+        Scanner in=new Scanner(System.in);
+        String A=in.next();
+        char[] arr1=A.toCharArray();
+        String m1="";
+        for(int i=arr1.length;i>0;i--)
+        {   m1=m1.concat(String.valueOf(arr1[i-1]));
+           // System.out.print(arr1[i-1]);
+        }
+       // System.out.println();
+        //System.out.println("reverse "+m1);
+
+        if(m1.equals(A))
+        {
+            System.out.println("Yes");
+        }
+        else
+        {
+            System.out.println("No");
+        }
+
+    }
+
+}
